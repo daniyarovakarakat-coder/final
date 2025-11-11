@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Ali Construction</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header shadow-sm bg-white">
+  <div class="container d-flex justify-content-between align-items-center py-3 flex-wrap">
+    <div class="logo">Ali <span>Construction</span></div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container py-5 fade-section">
+  <div class="row g-4">
+    <div class="col-md-6">
+      <h2>Get in Touch</h2>
+      <p>We’d love to hear from you! Please fill in the form or reach out using the contact details below.</p>
+      <p><strong>Phone:</strong> +7 (775) 728 5407</p>
+      <p><strong>Email:</strong> aliconstruction@mail.com</p>
+      <p><strong>Address:</strong> Mangilik el 58</p>
+    </div>
+    <div class="col-md-6">
+      <form id="contactForm">
+  <input type="text" id="contactName" class="form-control mb-3" placeholder="Your Name" required>
+  <input type="email" id="contactEmail" class="form-control mb-3" placeholder="Your Email" required>
+  <textarea id="contactMsg" class="form-control mb-3" rows="4" placeholder="Your Message" required></textarea>
+  <input type="password" id="contactPassword" class="form-control mb-2" placeholder="Password" required>
+  <div class="progress mb-2">
+    <div id="contactStrength" class="progress-bar" role="progressbar" style="width: 0%"></div>
+  </div>
+  <input type="password" id="contactConfirm" class="form-control mb-3" placeholder="Confirm Password" required>
+
+  <button type="submit" class="btn btn-primary w-100">Send Message</button>
+</form>
+<div id="formMessage" class="alert mt-3 d-none"></div>
+
+<div id="formMessage" class="alert mt-3 d-none"></div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer text-center py-4 bg-dark text-white">
+  <p>Ali Construction © 2025 | All rights reserved.</p>
+  <p>Developed by Ali | Group: MT-2403</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

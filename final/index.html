@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ali Construction — Building with Trust</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header shadow-sm bg-white">
+    <div class="container d-flex justify-content-between align-items-center py-3 flex-wrap">
+      <div class="logo">Ali <span>Construction</span></div>
+      <nav class="nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="contact-number fw-bold text-primary">+7 (775) 728 5407</div>
+    </div>
+  </header>
+
+  <!-- Carousel -->
+  <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="first photo.jpeg" class="d-block w-100" alt="first photo">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Reliable Construction Solutions</h2>
+          <p>We build with passion and precision.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="second photo.jpeg" class="d-block w-100" alt="second photo">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Modern Architecture</h2>
+          <p>Combining innovation with strength.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="third photo.jpeg" class="d-block w-100" alt="third photo">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Trusted by Clients Worldwide</h2>
+          <p>Let’s make your vision a reality.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- About -->
+  <section class="about container text-center my-5 fade-section">
+    <h2>About Us</h2>
+    <p>Ali Construction is a professional construction company with over 10 years of experience delivering residential and commercial projects. We bring your ideas to life with quality and trust.</p>
+    <button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#quoteModal">Get a Quote</button>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal fade" id="quoteModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title">Request a Quote</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+         <form id="quoteForm">
+  <input type="text" id="quoteName" class="form-control mb-2" placeholder="Your Name" required>
+  <input type="email" id="quoteEmail" class="form-control mb-2" placeholder="Email" required>
+  <textarea id="quoteDetails" class="form-control mb-2" rows="3" placeholder="Project Details" required></textarea>
+  <input type="password" id="quotePassword" class="form-control mb-2" placeholder="Password" required>
+  <div class="progress mb-2">
+    <div id="quoteStrength" class="progress-bar" role="progressbar" style="width: 0%"></div>
+  </div>
+  <input type="password" id="quoteConfirm" class="form-control mb-3" placeholder="Confirm Password" required>
+
+  <button type="submit" class="btn btn-primary w-100">Submit</button>
+</form>
+<div id="quoteMessage" class="alert mt-3 d-none"></div>
+
+</form>
+<div id="quoteMessage" class="alert mt-3 d-none"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer text-center py-4 bg-dark text-white">
+    <p>Ali Construction © 2025 | All rights reserved.</p>
+    <p>Developed by Ali | Group: MT-2403</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
